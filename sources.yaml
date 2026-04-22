@@ -1,0 +1,44 @@
+substacks:
+  - name: Deborah Folloni
+    url: https://dfolloni.substack.com/feed
+    priority: high
+
+  # Adicione outros Substacks aqui:
+  # - name: Simon Willison
+  #   url: https://simonwillison.net/atom/everything/
+  #   priority: medium
+
+hacker_news:
+  enabled: true
+  min_score: 150
+  keywords:
+    - claude
+    - anthropic
+    - agent
+    - llm
+    - python
+    - fastapi
+    - data engineering
+    - spec-driven
+    - context engineering
+
+arxiv:
+  enabled: true
+  categories:
+    - cs.AI
+    - cs.MA
+    - cs.CL
+  keywords:
+    - agent
+    - tool use
+    - multi-agent
+    - RAG
+    - LLM workflow
+    - context
+    - autonomous
+  max_results_per_day: 8
+
+analysis:
+  min_relevance_score: 6   # 1-10; itens abaixo desse valor são descartados
+  model: gemini-2.0-flash-lite
+  max_tokens: 1024
